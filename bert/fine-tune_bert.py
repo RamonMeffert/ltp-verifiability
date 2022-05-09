@@ -24,25 +24,25 @@ def compute_metrics(eval_pred):
 
 
 def main():
-    dataset = load_dataset("../datasets/regulation_room")
-    print(dataset["train"][5])
-    print(dataset["train"])
+    #train = load_dataset("../datasets/regulation_room", split="train[:90%]")
+    #eval = load_dataset("../datasets/regulation_room", split="train[-10%:]")
+    #test = load_dataset("../datasets/regulation_room", split="test")
+    train = load_dataset("../datasets/regulation_room", split="train[0:3]")
+    eval = load_dataset("../datasets/regulation_room", split="train[3:4]")
+    test = load_dataset("../datasets/regulation_room", split="test[4:8]")
 
-    #dataset = dataset.remove_columns(["proposition_number", "comment_number", "rule_name"])
-    #print(dataset["train"][5])
+    tokenized_train = train.map(tokenize_function, batched=True)
+    tokenized_eval = eval.map(tokenize_function, batched=True)
+    tokenized_test = test.map(tokenize_function, batched=True)
 
-    tokenized_datasets = dataset.map(tokenize_function, batched=True)
-
-    #small_train_dataset = tokenized_datasets["train"].shuffle(seed=42).select(range(5))
-    #small_eval_dataset = tokenized_datasets["test"].shuffle(seed=42).select(range(5))
-
-    training_args = TrainingArguments(output_dir="../bert/output/test_trainer")
+    training_args = TrainingArguments(output_dir="../bert/output/test_trainer",
+                                      evaluation_strategy="epoch")
 
     trainer = Trainer(
         model=model,
         args=training_args,
-        train_dataset=tokenized_datasets["train"],
-        eval_dataset=tokenized_datasets["test"],
+        train_dataset=tokenized_train,
+        eval_dataset=tokenized_eval,
         compute_metrics=compute_metrics,
         #warmup_steps=0,
         #weight_decay=0,
@@ -51,6 +51,14 @@ def main():
     )
 
     trainer.train()
+    trainer.evaluate()
+
+    logits, labels, _ = trainer.predict(tokenized_test)
+    predictions = np.argmax(logits, axis=-1)
+
+    print(labels)
+    print(predictions)
+    print(metric.compute(predictions=predictions, references=labels))
 
 
 if __name__ == "__main__":
