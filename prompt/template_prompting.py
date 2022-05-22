@@ -1,6 +1,5 @@
 from datasets import load_dataset, Dataset
 from transformers import AutoTokenizer, AutoModelForCausalLM
-import torch
 import random
 
 tokenizer = AutoTokenizer.from_pretrained("EleutherAI/gpt-neo-1.3B", cache_dir="/data/s4535553/.cache/")
