@@ -1,7 +1,7 @@
 datasets
 pandas
 numpy
-transformers
+transformers>=4.19
 torch
 scikit-learn
 openprompt
