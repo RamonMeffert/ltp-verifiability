@@ -15,16 +15,17 @@ plm, tokenizer, model_config, WrapperClass = load_plm('roberta',"roberta-base")
 
 from openprompt.prompts import ManualTemplate
 promptTemplate = ManualTemplate(
-    text = '{"placeholder":"text_a"} This text {"mask"} key information.' ,
+    text = '{"placeholder":"text_a"} This text contains {"mask"} information to verify the claim.' ,
     tokenizer = tokenizer,
 )
-classes = ['u','v']
+classes = ['u','e','n']
 
 promptVerbalizer = ManualVerbalizer(
     classes = classes,
     label_words = {
-        "u": ["lacks","needs","wants"],
-        "v": ["contains","has","provides"],
+        "u": ["limited","insufficient",'minimal'],
+        "e": ["objective","practical","factual"],
+        "n": ["abstract","hypothetical",'pretend']
         
     },
     tokenizer = tokenizer,
@@ -48,13 +49,19 @@ raw_dataset = {'train': train,
               
 
 dataset = {}
+true_labels = []
 for split in ['train', 'test','validation']:
     dataset[split] = []
     for i, data in enumerate(raw_dataset[split]):
         if data['label'] =='u':
             label = 0
-        else:
+        elif data['label'] =='e':
             label = 1
+        else:
+            label = 2
+            
+        if split == 'test':
+            true_labels.append(classes[label])
         input_example = InputExample(text_a = data['text'], label=label, guid=i)
         dataset[split].append(input_example)
 
@@ -127,7 +134,7 @@ with torch.no_grad():
 
 
 
-true_labels = raw_dataset['test']['label']
+# true_labels = raw_dataset['test']['label']
 print(classification_report(true_labels, predicted))
 
 

@@ -20,6 +20,7 @@ test = load_dataset("datasets/regulation_room", split="test")
 raw_dataset = {'train': train,
               'validation':dev,
               'test':test}
+              
 classes = ['u','v']
 dataset = {}
 for split in ['train', 'test','validation']:
