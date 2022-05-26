@@ -35,8 +35,8 @@ rr['verifiability'] = rr['verifiability'].map({
     'n': 'verifiable'
 })
 
-rr['experientiality'] = rr.label
-rr['experientiality'] = rr['experientiality'].map({
+rr['experiential'] = rr.label
+rr['experiential'] = rr['experiential'].map({
     'u': np.nan,
     'e': True,
     'n': False
@@ -80,7 +80,7 @@ cmv = cmv.drop(columns=['id', 'min_id'])
 # Rename columns to more general names
 cmv = cmv.rename(columns={
     'verif': 'verifiability',
-    'personal': 'experientiality'
+    'personal': 'experiential'
 })
 
 # Change labels to match other data set
@@ -89,7 +89,7 @@ cmv['verifiability'] = cmv['verifiability'].map({
     'Verif': 'verifiable',
     'NonArg': 'nonargument'
 })
-cmv['experientiality'] = cmv['experientiality'].map(
+cmv['experiential'] = cmv['experiential'].map(
     {
         'NonPers': False,
         'Pers': True
@@ -112,7 +112,7 @@ merged_data.to_csv('./all.csv')
 
 # Add stratifier column (utility)
 merged_data['stratifier'] = merged_data['verifiability'].astype(
-    str) + '_' + merged_data['experientiality'].astype(str)
+    str) + '_' + merged_data['experiential'].astype(str)
 
 # Remove incorrectly labeled item as there's only one occurence, which breaks
 # the train_test_split function
