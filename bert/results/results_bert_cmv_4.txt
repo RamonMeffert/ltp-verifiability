@@ -1,0 +1,15 @@
+Model: BERT
+Dataset: Change My View
+Split: 80/10/10
+Labels: u - unverifiable (1, 2); v, n - verifiable, non-personal (0, 1); n - non argumentive (2,2); v, p - verifiable, personal (0, 0)
+
+                      precision    recall  f1-score   support
+
+           u          0.77      0.86      0.81       528
+           v, n       0.67      0.59      0.62       203
+           n          0.96      0.71      0.81       192
+           v, p       0.67      0.79      0.72        58
+
+    accuracy                              0.77       981
+   macro avg          0.76      0.74      0.74       981
+weighted avg          0.78      0.77      0.77       981
