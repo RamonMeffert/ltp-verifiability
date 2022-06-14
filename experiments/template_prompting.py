@@ -2,8 +2,10 @@ from datasets import load_dataset, Dataset
 from transformers import AutoTokenizer, AutoModelForCausalLM
 import random
 
-tokenizer = AutoTokenizer.from_pretrained("EleutherAI/gpt-neo-1.3B", cache_dir="/data/s4535553/.cache/")
-model = AutoModelForCausalLM.from_pretrained("EleutherAI/gpt-neo-1.3B", cache_dir="/data/s4535553/.cache/")
+tokenizer = AutoTokenizer.from_pretrained("EleutherAI/gpt-neo-1.3B",
+                                          cache_dir="/data/s4535553/.cache/")
+model = AutoModelForCausalLM.from_pretrained(
+    "EleutherAI/gpt-neo-1.3B", cache_dir="/data/s4535553/.cache/")
 
 
 def map_labels(example):
@@ -39,7 +41,10 @@ def prompt_gptj(train, test):
         prompt = create_prompt(train, test[iter], n_examples)
         max_length = len(prompt) + 32
         input_ids = tokenizer(prompt, return_tensors='pt').input_ids
-        gen_tokens = model.generate(input_ids, do_sample=True, temperature=0.8, max_length=max_length)
+        gen_tokens = model.generate(input_ids,
+                                    do_sample=True,
+                                    temperature=0.8,
+                                    max_length=max_length)
         gen_text = tokenizer.batch_decode(gen_tokens)[0]
 
         data = gen_text.split('\n')[n_examples + 1]
@@ -52,8 +57,10 @@ def prompt_gptj(train, test):
 
 
 def main():
-    train = load_dataset("/home/s4535553/LTP/gpt/datasets/regulation_room", split="train")
-    test = load_dataset("/home/s4535553/LTP/gpt/datasets/regulation_room", split="test")
+    train = load_dataset("/home/s4535553/LTP/gpt/datasets/regulation_room",
+                         split="train")
+    test = load_dataset("/home/s4535553/LTP/gpt/datasets/regulation_room",
+                        split="test")
 
     train = train.map(map_labels)
     test = test.map(map_labels)

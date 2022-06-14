@@ -3,13 +3,12 @@ from openprompt.plms import load_plm
 from openprompt.prompts import ManualVerbalizer, ManualTemplate
 from openprompt.prompts.prompt_generator import T5TemplateGenerator
 from openprompt.pipeline_base import PromptDataLoader, PromptForClassification
-from openprompt.prompts import ManualTemplate
 import copy
 import torch
-from transformers import  AdamW, get_linear_schedule_with_warmup
+from transformers import  AdamW
 from tqdm import tqdm
 from openprompt.prompts.prompt_generator import RobertaVerbalizerGenerator
-from prompt.PromptUtils import load_data, process_reddit, process_regulation
+from PromptUtils import load_data, process_reddit, process_regulation
 import argparse
 from openprompt.prompts.prompt_generator import LMBFFTemplateGenerationTemplate
 

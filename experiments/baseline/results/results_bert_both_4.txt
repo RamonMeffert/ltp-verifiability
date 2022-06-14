@@ -1,0 +1,15 @@
+Model: BERT
+Dataset: Regulation Room, Change My View
+Split: 80/10/10
+Labels: u - unverifiable (1, 2); v, n - verifiable, non-personal (0, 1); n - non argumentive (2,2); v, p - verifiable, personal (0, 0)
+
+              precision    recall  f1-score   support
+
+           u          0.85      0.84      0.85      2417
+           v, n       0.60      0.62      0.61       740
+           n          0.74      0.74      0.74       352
+           v, p       0.78      0.76      0.77       267
+
+    accuracy                              0.78      3776
+   macro avg          0.74      0.74      0.74      3776
+weighted avg          0.79      0.78      0.79      3776

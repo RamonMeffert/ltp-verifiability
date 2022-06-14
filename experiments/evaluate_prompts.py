@@ -25,6 +25,5 @@ def main():
     print(classification_report(gold, predictions))
 
 
-
 if __name__ == "__main__":
     main()

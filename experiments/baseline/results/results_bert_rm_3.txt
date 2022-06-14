@@ -1,0 +1,14 @@
+Model: BERT
+Dataset: Regulation Room
+Split: 80/10/10
+Labels: u - unverifiable, n - non-experiential, e - experiential
+
+              precision    recall  f1-score   support
+
+           u       0.87      0.93      0.90      1142
+           n       0.73      0.63      0.68       292
+           e       0.86      0.72      0.78       263
+
+    accuracy                           0.85      1697
+   macro avg       0.82      0.76      0.79      1697
+weighted avg       0.84      0.85      0.84      1697

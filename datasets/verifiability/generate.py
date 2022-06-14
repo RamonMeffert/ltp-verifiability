@@ -100,7 +100,7 @@ cmv['experiential'] = cmv['experiential'].map(
 #########
 
 # Combine data sets
-merged_data = pd.concat([rr, cmv])
+merged_data = pd.concat([rr, cmv], ignore_index=True)
 
 # Save to csv
 merged_data.to_csv('./all.csv')
