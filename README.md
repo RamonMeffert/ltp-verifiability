@@ -56,7 +56,6 @@ Park, J., & Cardie, C. (2014). Identifying Appropriate Support for Propositions
 in Online User Comments. _Proceedings of the First Workshop on Argumentation
 Mining_, 29–38. <https://doi.org/10/gg29gq>
 
-
 <!-- URLs -->
 
 [hf-datasets]: https://huggingface.co/docs/datasets/dataset_script
@@ -64,6 +63,7 @@ Mining_, 29–38. <https://doi.org/10/gg29gq>
 [rr-dataset]: https://facultystaff.richmond.edu/~jpark/data/jpark_aclw14.zip
 [rr-hf]: datasets/regulation_room/regulation_room.py
 [rr-pp]: datasets/regulation_room/preprocess.py
+[rr-nb]: datasets/regulation_room/analysis.ipynb
 [cmv-hf]: datasets/change_my_view/change_my_view.py
 [cmv-nb]: datasets/change_my_view/analysis.ipynb
 [merged-hf]: datasets/verifiability/verifiability.py
