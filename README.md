@@ -39,11 +39,14 @@ the splits is available in [`generate.py`][merged-pp], and the dataset file is
 available in [`verifiability.py`][merged-hf]. Exploratory analysis is available
 in [`analysis.ipynb`][merged-nb].
 
+_Note: this dataset is not used in the paper._
+
 ## Experiments
 
 All code for experiments is located in the [experiments](experiments/) folder.
 
 - Baseline: BERT
+- GPT-neo
 - (i)PET
 - LM-BFF
 - Prompt Training
