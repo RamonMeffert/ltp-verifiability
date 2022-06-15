@@ -1,0 +1,100 @@
+The sentence: "I think 30 min is reasonable." is verifiable.
+The sentence: "I don't really know" is (unverifiable).
+The sentence: "Seems not too complicated." is unverifiable.
+The sentence: "Many airlines will also notify your cell email whatever if you have it in their frequent flier info." is unverifiable.
+The sentence: "That would also  be helpful" is unverifiable.
+The sentence: "Also many of us live 1-2 hours from major airports" is unverifiable.
+The sentence: "and the info would be very helpful." is unverifiable.
+The sentence: "A flight is a flight." is unverifiable.
+The sentence: "The rule should apply to all." is verifiable.
+The sentence: "I don't see the harm in banning at least the service of peanuts on the airlines." is verifiable.
+The sentence: "The ban should include all peanut and peanut containing products." is verifiable.
+The sentence: "Recently we flew across the country and followed all of the procedures the airline gave us in turn they promised to clean seats and  create a buffer zone to sheild my 3 year old son from any peanut exposure." is unverifiable.
+The sentence: "As I walked to me seat expecting what I was promised I find left over peanuts in our seats!" is unverifiable.
+The sentence: "I came prepared with wipes and medicine just in case." is unverifiable.
+The sentence: "The airline offered no assistance in fixing the problem." is unverifiable.
+The sentence: "After cleaning everything up and getting all settled in, I had to hold my son for the next 5 hours" is verifiable.
+The sentence: "because it was too risky." is unverifiable.
+The sentence: "At the onset of an attack the use of an epi-pen would give us about 20 minutes to be in a hospital." is verifiable.
+The sentence: "During the snack a member of the flight crew pointed at us and told the other passengers that he could not offer them peanut MandMs" is verifiable.
+The sentence: "because there was an allergy sufferer on board." is unverifiable.
+The sentence: "Thankfully, after a dose of benadryl my son was fine." is unverifiable.
+The sentence: "I do think the passenger should come equipped with medication if case of exposure." is unverifiable.
+The sentence: "Most severe allergy suffers carry medicine with them anyway." is unverifiable.
+The sentence: "It would not hurt for the airline to carry addition medication" is unverifiable.
+The sentence: "because the epi-pen only allows 20 minutes to seek immediate medical attention." is not verifiable.
+The sentence: "I don't see the harm in banning at least the service of peanuts on the airlines." is unverifiable.
+The sentence: "The ban should include all peanut and peanut containing products." is unverifiable.
+The sentence: "I forgot to mention that I would not expect the airline to provide my son's medication!" is unverifiable.
+The sentence: "Currently southwest does not serve peanut products on their flights." is unverifiable.
+The sentence: "After this experience we only fly with Southwest!" is unverifiable.
+The sentence: "TELL THE TRUTH immediately, boys," is unverifiable.
+The sentence: "and treat passengers like valued human beings." is unverifiable.
+The sentence: "That's it." is unverifiable.
+The sentence: "Southwest does it," is unverifiable.
+The sentence: "and they have the most loyal passengers in the industry." is verifiable.
+The sentence: "It CAN be done, if you have the will to do it." is unverifiable.
+The sentence: "The price SW shows online is the REAL price, not a teaser fare that shoots up rapidly when the taxes, fees, surcharges, etc. are added." is unverifiable.
+The sentence: "SW does not charge me nuisance fees." is unverifiable.
+The sentence: "If they can do it, so can the rest of you." is unverifiable.
+The sentence: "I just wish BWI were closer to the Northern VA location I frequent," is unverifiable.
+The sentence: "so I could use SW all the time." is verifiable.
+The sentence: "I fly at least once every week, usually between Columbus, OH and the DC area." is unverifiable.
+The sentence: "During the past year the Sunday night delays on USAir, United, and even SW  in that order have been abismal, with delays at LEAST 30-50% of the time." is unverifiable.
+The sentence: "When cancellations were made, passengers weren't told until 5-10 minutes before departure." is unverifiable.
+The sentence: "These have mostly been mechanical problems, crew shortages, and non-severe weather." is unverifiable.
+The sentence: "Efficient, effective management would prevent the vast majority of these problems." is verifiable.
+The sentence: "On Sunday, June 13 I was scheduled on US3234 DCA-CMH at 4:55 pm." is unverifiable.
+The sentence: "When I arrived at the gate the plane and crew were there." is unverifiable.
+The sentence: "At about 10 min. before boarding time the gate agent said they'd made a minor repair to the plane," is verifiable.
+The sentence: "This went on until after 7 pm, at which time I re-booked for the next morning and went home." is verifiable.
+The sentence: "The plane did eventually fly, 3 hours late," is unverifiable.
+The sentence: "but meanwhile I've wasted 5 hours sitting at an overheated, overcrowded, hopelessly noisy National Airport" is unverifiable.
+The sentence: "because USAir can't get paperwork faxed from BRAZIL." is unverifiable.
+The sentence: "They are bound to occur." is unverifiable.
+The sentence: "Plan for it and head off these problems." is unverifiable.
+The sentence: "During last winter's blizzards in the East, SW was the only airline that told the truth and notified us many hours in advance that flights were cancelled." is unverifiable.
+The sentence: "United and USAir constantly insisted the flights were going, when in fact they were not." is unverifiable.
+The sentence: "If the carriers want the privilege of using our air space and our public airports, they should be held to this standard." is unverifiable.
+The sentence: "TELL THE TRUTH AS SOON AS YOU KNOW IT, and fix the problem promptly if it's anything other than severe weather that is truly beyond your control." is unverifiable.
+The sentence: "I strongly support any provision that would provide air travelers with additional timely information regarding flight delays." is unverifiable.
+The sentence: "In many cases a traveler may need to make other plans to reach his or her destination," is verifiable.
+The sentence: "and the lack of information regarding flight delays may limit his or her ability to do so." is unverifiable.
+The sentence: "DOT should require that when a fare or rate can only be achieved if two persons book that both the one person rate be displayed or provided unless it is clear that the person booking is booking for two." is unverifiable.
+The sentence: "DOT should not adopt a less strict approach to post-purchase price increases." is unverifiable.
+The sentence: "If I buy a TV at Best Buy, Best Buy cannot come after me later to wring more money out of me." is unverifiable.
+The sentence: "A traveler enters into a contract with an airline whereby the traveler pays a price so that the airline with transport the person somewhere on an agreed-upon date and time." is unverifiable.
+The sentence: "When the airline later changes the price, it is effectively breaking the contract and extorting money out of the traveler who likely will lose more money it he or she objects." is unverifiable.
+The sentence: "Given the fact that travelers contract for airline travel at different times or dates between the time the airline posts the flight and the date of travel, and people already know that prices can change if they do not buy a ticket, the airline can raise ticket prices on seats purchased later." is unverifiable.
+The sentence: "Further, the airline likely will include possible fuel price fluctuations in their calculation of ticket fares or prices." is unverifiable.
+The sentence: "Regarding ticket prices, I believe airlines should be required to publish a comparable, typical fare regardless of how they otherwise choose to display their pricing structure." is unverifiable.
+The sentence: "For instance, all airlines should be required to publish the price, fee and tax inclusive, to fly round-trip with one checked bag to the destination." is unverifiable.
+The sentence: "This would allow travelers to compare prices between carriers" is unverifiable.
+The sentence: "because the price would be for the same thing." is unverifiable.
+The sentence: "To the extent other services could be provided, that could be displayed separately as an opt-in." is unverifiable.
+The sentence: "The biggest issue I have as a traveler with the various prices and airline price structures is that there is no comparability." is verifiable.
+The sentence: "While I think I may be getting a good deal with one carrier," is unverifiable.
+The sentence: "there always seems to be some other amount I later must pay" is unverifiable.
+The sentence: "that, were it figured into the mix when I made the decision of which carrier to fly with, could have caused me to choose a different carrier." is unverifiable.
+The sentence: "Any foreign carrier that operates in the U.S. should be subject to U.S. rules with respect to U.S. flights." is unverifiable.
+The sentence: "Those carriers are making money off U.S. travelers," is verifiable.
+The sentence: "consequently they should be required to follow the rules here." is unverifiable.
+The sentence: "First, I have my fair share of allergies and have spent a fair share of time in the ER, with allergic reactions." is verifiable.
+The sentence: "As a parent, I understand the pain that some of the parents have related in their stories." is unverifiable.
+The sentence: "We, the ones with allergies are very few and far between, when we consider the flying public." is verifiable.
+The sentence: "I have my share of epi-pens, in the event one is needed or prednisone, should I have a case of anaphylaxis." is unverifiable.
+The sentence: "As they say in the BSA, "Be Prepared."" is unverifiable.
+The sentence: "I guess I am fortunate" is unverifiable.
+The sentence: "since my symptomology is always similar in nature and covers a four to 12 hour period:  Itchy skin, itchy scalp, swelling of joints, poor demeanor, then hives and off to the ER if an anti-anaphylaxis drug isn't in use by the time hives break out," is unverifiable.
+The sentence: "which is usually 4 hours after the first symptoms start to manifest themselves or the scalp becomes itchy." is unverifiable.
+The sentence: "If this is a case where people, with these allergies are deemed "handicapped, these people should have their medication on their person, to mitigate anaphylaxis." is verifiable.
+The sentence: "I do." is unverifiable.
+The sentence: "After the medication is ingested or injected, relief comes in less than five minutes" is unverifiable.
+The sentence: "and the only discomfort I have had is a case of the sweats and  or  or a minor headache." is unverifiable.
+The sentence: "When peanuts are served, they come individually wrapped" is unverifiable.
+The sentence: "and it is the responsibility of the passenger to dispose of the wrapper, accordingly." is unverifiable.
+The sentence: "I regret to say that although pretzels have been offered as an alternative, they aren't a substitute for peanuts." is unverifiable.
+The sentence: "Also, I have been advised that cashews are edible by people with peanut allergies and could be used as a substitute." is unverifiable.
+The sentence: "Since medication is portable," is unverifiable.
+The sentence: "I believe that a warning that peanuts are being used is sufficent and that flight attendents be trained in the usage of epi-pens for this purpose." is verifiable.
+The sentence: "When airlines are forced to limit the types of food it can serve, esecially when less than 1% of the flying public it serves, it impacts price, quality of service and capitulates to the will of the very small minority," is unverifiable.
