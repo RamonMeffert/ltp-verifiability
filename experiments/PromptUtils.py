@@ -78,7 +78,7 @@ def process_regulation(raw_dataset, multiple=False):
     return dataset
 
 
-def get_verbalizer(tokenizer, multiple=False):
+def get_template(tokenizer, multiple=False):
     if multiple:
         promptTemplate = ManualTemplate(
             text=
@@ -93,7 +93,7 @@ def get_verbalizer(tokenizer, multiple=False):
     return promptTemplate
 
 
-def get_template(tokenizer, multiple=False):
+def get_verbalizer(tokenizer, multiple=False):
     if multiple:
         classes = ['u', 'e', 'n']
 

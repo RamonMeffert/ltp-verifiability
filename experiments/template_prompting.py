@@ -2,10 +2,9 @@ from datasets import load_dataset, Dataset
 from transformers import AutoTokenizer, AutoModelForCausalLM
 import random
 
-tokenizer = AutoTokenizer.from_pretrained("EleutherAI/gpt-neo-1.3B",
-                                          cache_dir="/data/s4535553/.cache/")
-model = AutoModelForCausalLM.from_pretrained(
-    "EleutherAI/gpt-neo-1.3B", cache_dir="/data/s4535553/.cache/")
+tokenizer = AutoTokenizer.from_pretrained("EleutherAI/gpt-neo-1.3B",)
+                                          
+model = AutoModelForCausalLM.from_pretrained("EleutherAI/gpt-neo-1.3B")
 
 
 def map_labels(example):
@@ -57,9 +56,9 @@ def prompt_gptj(train, test):
 
 
 def main():
-    train = load_dataset("/home/s4535553/LTP/gpt/datasets/regulation_room",
+    train = load_dataset("../datasets/regulation_room",
                          split="train")
-    test = load_dataset("/home/s4535553/LTP/gpt/datasets/regulation_room",
+    test = load_dataset("../datasets/regulation_room",
                         split="test")
 
     train = train.map(map_labels)
@@ -75,12 +74,12 @@ def main():
     for i in used_prompts:
         print(i)
 
-    with open('/home/s4535553/LTP/gpt/output_gpt.txt', 'w') as file:
+    with open('output_gpt.txt', 'w') as file:
         for prediction in results:
             file.write(prediction)
             file.write("\n")
 
-    with open('/home/s4535553/LTP/gpt/prompts_gpt.txt', 'w') as file:
+    with open('prompts_gpt.txt', 'w') as file:
         for prompt in used_prompts:
             file.write(prompt)
             file.write("\n")

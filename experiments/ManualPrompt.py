@@ -111,7 +111,7 @@ def main():
     promptModel = PromptForClassification(
         template=promptTemplate,
         plm=plm,
-        verbalizer=get_verbalizer(tokenizer, multiClass),
+        verbalizer=get_verbalizer(tokenizer, multiClass)[1],
     )
 
     raw_dataset = load_data(dataDir)
@@ -140,3 +140,9 @@ def main():
 
     true_labels = dataset['test']['label']
     print(classification_report(true_labels, predicted))
+    
+ 
+
+
+if __name__ == "__main__":
+ 	main()

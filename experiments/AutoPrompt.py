@@ -364,3 +364,8 @@ def main():
                 optimizer)
     test_score = evaluate(model, test_dataloader, save=True)
     print(test_score)
+    
+    
+    
+if __name__ == "__main__":
+ 	main()

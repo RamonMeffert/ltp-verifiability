@@ -27,9 +27,9 @@ def main():
     #train = load_dataset("../datasets/regulation_room", split="train[:90%]")
     #eval = load_dataset("../datasets/regulation_room", split="train[-10%:]")
     #test = load_dataset("../datasets/regulation_room", split="test")
-    train = load_dataset("../datasets/regulation_room", split="train[0:3]")
-    eval = load_dataset("../datasets/regulation_room", split="train[3:4]")
-    test = load_dataset("../datasets/regulation_room", split="test[4:8]")
+    train = load_dataset("../../datasets/regulation_room", split="train[0:3]")
+    eval = load_dataset("../../datasets/regulation_room", split="train[3:4]")
+    test = load_dataset("../../datasets/regulation_room", split="test[4:8]")
 
     tokenized_train = train.map(tokenize_function, batched=True)
     tokenized_eval = eval.map(tokenize_function, batched=True)

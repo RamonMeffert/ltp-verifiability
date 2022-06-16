@@ -129,7 +129,7 @@ class RedditDataProcessor(DataProcessor):
     """
 
     # Set this to the name of the task
-    TASK_NAME = "reddit"
+    TASK_NAME = "binary"
 
     # Set this to the name of the file containing the train examples
     TRAIN_FILE_NAME = "train.csv"
@@ -226,7 +226,7 @@ class RedditMultiDataProcessor(DataProcessor):
     """
 
     # Set this to the name of the task
-    TASK_NAME = "reddit_multi"
+    TASK_NAME = "multi"
 
     # Set this to the name of the file containing the train examples
     TRAIN_FILE_NAME = "train.csv"

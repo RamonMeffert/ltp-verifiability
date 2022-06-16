@@ -263,7 +263,7 @@ class RedditPVP(PVP):
     """
 
     # Set this to the name of the task
-    TASK_NAME = "reddit"
+    TASK_NAME = "binary"
 
     # Set this to the verbalizer for the given task: a mapping from the task's labels (which can be obtained using
     # the corresponding DataProcessor's get_labels method) to tokens from the language model's vocabulary
@@ -308,7 +308,7 @@ class RedditMultiPVP(PVP):
     """
 
     # Set this to the name of the task
-    TASK_NAME = "reddit_multi"
+    TASK_NAME = "multi"
 
     # Set this to the verbalizer for the given task: a mapping from the task's labels (which can be obtained using
     # the corresponding DataProcessor's get_labels method) to tokens from the language model's vocabulary
