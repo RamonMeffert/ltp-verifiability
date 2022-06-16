@@ -7,6 +7,9 @@ from [here](https://github.com/timoschick/pet).
 
 ## Usage
 
+To run the scripts for this experiment, you first have to install another version of transformer. 
+``` pip install transformers==3.0.2```
+
 To train the model, the raw dataset must be pre-processed first. Execute the
 script `create_dataset.py` to process data. You can only evaluate a model
 trained with final classifier with the script `evaluate.py`
@@ -44,10 +47,8 @@ python train.py\
 ```sh
 cd experiments/PET
 python evaluate.py \
-    --method METHOD\                    # pet or ipet
     --data_dir DIR\                     # dataset directory (processd)
-    --model_type TYPE\                  # model type
-    --model_name_or_path NAME_OR_PATH\  # saved model name or path
     --task_name NAME\                   # binary/multi
     --output_dir DIR\                   # saved output directory
+    --use_final_classifier              # flag. use if final classifier should be added in the pipeline
 ```
