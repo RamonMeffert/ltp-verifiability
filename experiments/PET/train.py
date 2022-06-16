@@ -1,9 +1,3 @@
-"""
-This script can be used to train and evaluate either a regular supervised model or a PET/iPET model on
-one of the supported tasks and datasets.
-"""
-
-
 import os
 import torch
 from pet.tasks import PROCESSORS, load_examples, UNLABELED_SET, TRAIN_SET, DEV_SET, TEST_SET, METRICS, DEFAULT_METRICS, FULL_TRAIN_SET

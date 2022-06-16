@@ -5,3 +5,5 @@ transformers>=4.19
 torch
 scikit-learn
 openprompt
+torchvision
+typing-extensions
