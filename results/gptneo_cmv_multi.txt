@@ -1,0 +1,8 @@
+             precision    recall  f1-score   support
+
+Unverifiable       0.79      0.57      0.66        81
+  Verifiable       0.17      0.37      0.23        19
+
+    accuracy                           0.53       100
+   macro avg       0.48      0.47      0.45       100
+weighted avg       0.67      0.53      0.58       100
