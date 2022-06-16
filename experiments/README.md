@@ -1,5 +1,12 @@
 # Experiments
 
+## Baseline
+
+```sh
+cd experiments/baseline
+python fine-tune_bert.py
+```
+
 ## GPT-neo
 
 To change which experiment is run, change the dataset and label set in the
