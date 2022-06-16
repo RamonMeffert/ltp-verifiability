@@ -30,11 +30,11 @@ _Note: this dataset is not used in the paper._
 
 [rr-site]: https://facultystaff.richmond.edu/~jpark/
 [rr-dataset]: https://facultystaff.richmond.edu/~jpark/data/jpark_aclw14.zip
-[rr-hf]: datasets/regulation_room/regulation_room.py
-[rr-pp]: datasets/regulation_room/preprocess.py
-[rr-nb]: datasets/regulation_room/analysis.ipynb
-[cmv-hf]: datasets/change_my_view/change_my_view.py
-[cmv-nb]: datasets/change_my_view/analysis.ipynb
-[merged-hf]: datasets/verifiability/verifiability.py
-[merged-pp]: datasets/verifiability/generate.py
-[merged-nb]: datasets/verifiability/analysis.ipynb
+[rr-hf]: regulation_room/regulation_room.py
+[rr-pp]: regulation_room/preprocess.py
+[rr-nb]: regulation_room/analysis.ipynb
+[cmv-hf]: change_my_view/change_my_view.py
+[cmv-nb]: change_my_view/analysis.ipynb
+[merged-hf]: verifiability/verifiability.py
+[merged-pp]: verifiability/generate.py
+[merged-nb]: verifiability/analysis.ipynb
