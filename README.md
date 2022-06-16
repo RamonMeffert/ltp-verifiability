@@ -15,60 +15,59 @@ folder. We have taken the original dataset files and transformed them into the
 original dataset files, an analysis notebook and a demo file showing how you use
 the dataset.
 
-### [Regulation Room](datasets/regulation_room/)
-
-The [original dataset files][rr-dataset] used by Park & Cardie (2014) are
-available from Joonsuk Park's [website][rr-site]. The code used to transform the
-provided `.txt` files into `.csv` files that can be used with HuggingFace
-datasets is available in [`preprocess.py`][rr-pp] and the dataset file is
-available in [`regulation_room.py`][rr-hf]. Exploratory analysis is available in
-[`analysis.ipynb`][rr-nb].
-
-### [Change My View](datasets/change_my_view/)
-
-This is an as yet unpublished dataset created at the University of Groningen.
-The original data files were already in `.csv` format, and the dataset file is
-available in [`change_my_view.py`][cmv-hf]. Exploratory analysis is available in
-[`analysis.ipynb`][cmv-nb].
-
-### [Merged dataset](datasets/verifiability/)
-
-To combat the small size of the datasets, we have created a merged dataset from
-the two datasets mentioned above. The code used to generate the `.csv` files for
-the splits is available in [`generate.py`][merged-pp], and the dataset file is
-available in [`verifiability.py`][merged-hf]. Exploratory analysis is available
-in [`analysis.ipynb`][merged-nb].
-
-_Note: this dataset is not used in the paper._
-
 ## Experiments
 
 All code for experiments is located in the [experiments](experiments/) folder.
+Information on how to reproduce the experiments is available in the
+[readme](experiments/README.md) in that folder.
 
-- Baseline: BERT
-- GPT-neo
-- (i)PET
-- LM-BFF
-- Prompt Training
+- [BERT](experiments/baseline/) (Devlin et al., 2019)
+- [GPT-neo](experiments/template_prompting.py) (Black et al., 2021)
+- [(i)PET](experiments/PET/) (Schick and Schütze, 2021)
+- [LM-BFF](experiments/AutoPrompt.py) (Gao et al., 2021)
+- [Prompt Training with RoBERTa](experiments/ManualPrompt.py) (Liu et al., 2019)
+
+## Results
+
+The results for all methods can be found in the [results](results/) folder.
+Information about the results is available in the [readme](results/README.md) in
+that folder.
 
 ---
 
 ## References
 
+Black, S., G. Leo, P. Wang, C. Leahy, and S. Biderman (2021, March). GPT-Neo:
+Large scale autoregressive language modelling with mesh-tensorflow.
+<https://doi.org/105281/zenodo.5297715>.
+
+Devlin, J., M.-W. Chang, K. Lee, and K. Toutanova (2019, June). BERT: Pre-
+training of deep bidirectional transformers for language understanding. In
+_Proceedings of the 2019 Conference of the North American Chapter of the
+Association for Computational Linguistics: Human Language Technologies, Volume 1
+(Long and Short Papers)_, Minneapolis, Minnesota, pp. 4171–4186. Association for
+Computational Linguistics.
+
+Gao, T., A. Fisch, and D. Chen (2021, August). Making pre-trained language
+models better few-shot learners. In _Proceedings of the 59th Annual Meeting of
+the Association for Computational Linguistics and the 11th International Joint
+Conference on Natural Language Processing (Volume 1: Long Papers)_, Online, pp.
+3816–3830. Association for Computational Linguistics.
+
+Liu, Y., M. Ott, N. Goyal, J. Du, M. Joshi, D. Chen, O. Levy, M. Lewis, L.
+Zettlemoyer, and V. Stoyanov (2019). RoBERTa: A robustly optimized BERT
+pretraining approach. _CoRR abs/1907.11692_.
+
 Park, J., & Cardie, C. (2014). Identifying Appropriate Support for Propositions
 in Online User Comments. _Proceedings of the First Workshop on Argumentation
 Mining_, 29–38. <https://doi.org/10/gg29gq>
 
+Schick, T. and H. Schütze (2021). Exploiting Cloze-Questions for Few-Shot Text
+Classification and Natural Language Inference. In _Proceedings of the 16th
+Conference of the European Chapter of the Association for Computational
+Linguistics: Main Volume_, Online, pp. 255–269. Association for Computational
+Linguistics.
+
 <!-- URLs -->
 
 [hf-datasets]: https://huggingface.co/docs/datasets/dataset_script
-[rr-site]: https://facultystaff.richmond.edu/~jpark/
-[rr-dataset]: https://facultystaff.richmond.edu/~jpark/data/jpark_aclw14.zip
-[rr-hf]: datasets/regulation_room/regulation_room.py
-[rr-pp]: datasets/regulation_room/preprocess.py
-[rr-nb]: datasets/regulation_room/analysis.ipynb
-[cmv-hf]: datasets/change_my_view/change_my_view.py
-[cmv-nb]: datasets/change_my_view/analysis.ipynb
-[merged-hf]: datasets/verifiability/verifiability.py
-[merged-pp]: datasets/verifiability/generate.py
-[merged-nb]: datasets/verifiability/analysis.ipynb
